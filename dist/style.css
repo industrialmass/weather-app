@@ -1,0 +1,43 @@
+:root {
+  color: #ddd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: no-repeat linear-gradient(blue, rgb(40, 13, 145));
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sections */
+
+.main {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Summary */
+
+.summary {
+  flex-direction: column;
+}
+
+/* Data */
+
+.data {
+  display: grid;
+  row-gap: 2vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Forecast */
+
+.forecast {
+}
