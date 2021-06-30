@@ -43,11 +43,33 @@ body {
   margin: 0;
 }
 
-/* -- Image Block -- */
+/* -- Content Container -- */
+
+.summary__content-container {
+  display: flex;
+}
+
+/* ---- Image Block ---- */
 
 .summary__image {
+  flex-grow: 1;
   font-size: 100px;
   padding: 20px;
+  padding-bottom: 0;
+}
+
+/* ---- Temp Block ---- */
+
+.summary__temp {
+  padding: 20px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 4rem;
 }
 
 /* Data */
