@@ -8,6 +8,12 @@
   margin: 0;
 }
 
+@media screen and (min-width: 1258px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -36,17 +42,32 @@ body {
 @media screen and (min-width: 1258px) {
   .main {
     width: 50vw;
-    padding: 0 150px;
     margin-left: 25vw;
     margin-right: 25vw;
   }
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  padding-bottom: 1vh;
+}
+
+.header__city {
+  font-size: 2.32rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* Summary */
 
 .summary {
   width: 100%;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -57,29 +78,19 @@ body {
   }
 }
 
-/* -- Header Block -- */
-
-.summary__header-container {
-  padding-bottom: 1vh;
-}
-
-.summary__header {
-  font-size: 2.32rem;
-  padding: 0;
-  margin: 0;
-}
-
 /* -- Content Container -- */
 
 .summary__content-container {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* ---- Image Block ---- */
 
 .summary__image {
   flex-grow: 1;
-  font-size: 100px;
+  font-size: 6rem;
   padding: 20px;
   padding-bottom: 0;
 }
@@ -161,7 +172,7 @@ body {
 
 .forecast__icon {
   padding: 5px 0;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .wi {
