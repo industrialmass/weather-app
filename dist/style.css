@@ -1,10 +1,15 @@
 :root {
+  overflow: hidden;
   color: #ddd;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: no-repeat linear-gradient(blue, rgb(40, 13, 145));
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -16,21 +21,32 @@ body {
 /* Sections */
 
 .main {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   width: 96vw;
   height: 100vh;
-  padding-top: 20px;
+  margin-top: 2vh;
   margin-left: 2vw;
   margin-right: 2vw;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 /* Summary */
 
 .summary {
+  width: 100%;
   flex-direction: column;
   border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 400px) {
+  .summary {
+    width: 50%;
+    height: 20%;
+    border-bottom: 0;
+  }
 }
 
 /* -- Header Block -- */
@@ -60,6 +76,12 @@ body {
   padding-bottom: 0;
 }
 
+@media screen and (min-width: 400px) {
+  .summary__image {
+    flex-grow: 0;
+  }
+}
+
 /* ---- Temp Block ---- */
 
 .summary__temp {
@@ -77,12 +99,22 @@ body {
 /* Data */
 
 .data {
+  width: 100%;
   padding: 3vh 20px;
   display: grid;
-  row-gap: 2vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 100px 40px;
   border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 400px) {
+  .data {
+    border-bottom: 0;
+    border-left: 1px solid #ddd;
+    width: 50%;
+    height: 20%;
+    margin-left: auto;
+  }
 }
 
 /* -- Data Block -- */
@@ -100,6 +132,7 @@ body {
 /* Forecast */
 
 .forecast {
+  width: 100%;
   margin-top: 20px;
   display: flex;
   align-items: center;
