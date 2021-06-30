@@ -16,8 +16,11 @@ body {
 
 .main {
   box-sizing: border-box;
-  width: 100vw;
+  width: 96vw;
   height: 100vh;
+  padding-top: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   display: flex;
   flex-direction: column;
 }
@@ -26,6 +29,25 @@ body {
 
 .summary {
   flex-direction: column;
+  border-bottom: 1px solid #ddd;
+}
+
+/* -- Header Block -- */
+
+.summary__header-container {
+  padding-bottom: 1vh;
+}
+
+.summary__header {
+  padding: 0;
+  margin: 0;
+}
+
+/* -- Image Block -- */
+
+.summary__image {
+  font-size: 100px;
+  padding: 20px;
 }
 
 /* Data */
@@ -40,4 +62,5 @@ body {
 /* Forecast */
 
 .forecast {
+  display: none;
 }
