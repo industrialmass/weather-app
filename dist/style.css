@@ -8,6 +8,7 @@
 }
 
 body {
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -39,6 +40,7 @@ body {
 }
 
 .summary__header {
+  font-size: 2.32rem;
   padding: 0;
   margin: 0;
 }
@@ -75,14 +77,54 @@ body {
 /* Data */
 
 .data {
+  padding: 3vh 20px;
   display: grid;
   row-gap: 2vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  border-bottom: 1px solid #ddd;
+}
+
+/* -- Data Block -- */
+
+.data__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.data__value {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* Forecast */
 
 .forecast {
-  display: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -- Forecast Block -- */
+
+.forecast__block {
+  box-sizing: border-box;
+  max-width: 18vw;
+  display: flex;
+  padding: 10px;
+  margin: 1vw;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(39, 13, 145, 0.486);
+}
+
+.forecast__icon {
+  padding: 5px 0;
+  font-size: 40px;
+}
+
+.wi {
+  transform: scaleX(-1);
 }
